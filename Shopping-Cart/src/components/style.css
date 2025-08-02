@@ -1,0 +1,118 @@
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Arial", sans-serif;
+    color: #333;
+}
+
+.Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+
+.navLinks {
+    display: flex;
+    gap: 60px;
+    font-family: "Arial", sans-serif;
+    font-weight: 600;
+    color: #333;
+    font-size: larger;
+    margin-right: 130px;
+}
+
+.navItem {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.2s;
+}
+
+.navItem:hover {
+    color: #fc7d15;
+}
+
+.cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.card {
+    width: 380px;
+    height: 60vh;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    text-align: center;
+    transition: transform 0.3s ease;
+
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.productImage {
+    width: 200px;
+    height: 35vh;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+}
+
+.addToCartBtn {
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #f8a765;
+    transition: background-color 0.2s;
+}
+
+.addToCartBtn:hover {
+    background-color: #e57417;
+}
+.inputWrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.inputBox {
+    background-color: white;
+    padding: 8px;
+    border-radius: 20px;
+    border: 2px solid brown;
+    width: 550px;
+    font-size: medium;
+    color: black;
+}
+
+.filterData {
+    position: absolute;
+    top: 39px; /* Adjust based on your input height */
+    border: 1px solid black;
+    border-radius: 2px;
+    max-height: 300px;
+    overflow-y: auto;
+    background-color: white;
+    width: 560px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    text-align: left;
+    padding: 6px;
+     left: 0;
+    z-index: 10;
+}
